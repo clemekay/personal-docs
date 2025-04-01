@@ -13,6 +13,13 @@
 **index**: staging area that holds a snapshot of your changes that will be included in the next commit
 
 
+## Common git commands
+**git clone \<repository-url\>** creates remote-tracking branches for all remote branches in `<repository>`, plus creates a local `main` branch set to track `<remote>/main` (assuming that `main` is the default branch of `<repository>` and the remote name is `<remote>`)
+
+* **git checkout --track \<remote\>/\<branch\>** will create and checkout a local `<branch>` from the remote-tracking `<branch>` that was fetched when the remote repository was cloned
+
+**git fetch** will download objects from the remote repository and update all remote-tracking branch(es), but not local tracking branches
+
 ## Graph theory
 [Reference](https://think-like-a-git.net/sections/graph-theory.html)
 
